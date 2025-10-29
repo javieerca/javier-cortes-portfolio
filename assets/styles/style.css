@@ -1,0 +1,49 @@
+.color-fondo {
+    background-color: #0e1419 !important;
+}
+
+.color-fondo_secundario {
+    background-color: #ffd500;
+}
+
+.color-terciario {
+    background-color: #468faf;
+}
+
+.fondo_claro {
+    background-color: #333;
+    & a {
+        color: #eeeeee;
+    }
+}
+
+.letras_amarillas {
+    color: #ffd500;
+}
+
+.letras_claras {
+    color: #eeeeee;
+}
+
+.navbar-item-hover a {
+    padding: 15px 50px !important;
+    border-radius: 50px;
+}
+
+.navbar-item-hover a:hover {
+    background-color: gray;
+    /* color: #ffd500; */
+    overflow: hidden;
+}
+
+.descripcion * {
+    font-size: 4rem !important;
+}
+
+.herramientas_lista *{
+    margin-bottom: 0px;
+}
+
+.lo_que_se{
+    max-height: 75px !important;
+}
