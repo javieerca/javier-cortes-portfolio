@@ -40,10 +40,17 @@
     font-size: 4rem !important;
 }
 
-.herramientas_lista *{
+.herramientas_lista * {
     margin-bottom: 0px;
 }
+.lo_que_se {
+    max-height: 75px;
+}
 
-.lo_que_se{
-    max-height: 75px !important;
+.imagen_aumenta {
+    transition: transform 0.3s ease;
+}
+
+.imagen_aumenta:hover {
+    transform: scale(1.3);
 }
