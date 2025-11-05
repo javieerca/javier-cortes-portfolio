@@ -20,9 +20,9 @@
         ></script>
 
         <!-- Página principal -->
-        <div id="principal" class="vh-100 d-flex flex-column justify-content-between">
+        <div id="principal" class="min-vh-100 d-flex flex-column justify-content-between">
             <nav class="navbar navbar-expand-lg bg-body-tertiary color-fondo nav-size p-5">
-                <div class="container-fluid">
+                <div class="w-100 p-4">
                     <button
                         class="navbar-toggler bg-light"
                         type="button"
@@ -36,18 +36,20 @@
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <div class="w-100 d-lg-flex justify-content-end align-items-center">
-                            <div class="letras_claras me-auto ps-lg-5 text-nowrap">
-                                <h3 class="fs-1 text-center">Dev \ Javier Cortés</h3>
+                        <div class="w-100 pe-lg-5 d-lg-flex justify-content-end align-items-center">
+                            <div class="letras_claras me-auto ps-lg-5 text-nowrap my-2 my-lg-0">
+                                <a class="dev_Jav" href="#">
+                                    <h3 class="fs-1 text-center m-0">Dev \ Javier Cortés</h3>
+                                </a>
                             </div>
 
                             <!-- Pestañas -->
-                            <div class="me-5 ms-4">
+                            <div class="ms-lg-4 mt-3 mt-lg-0">
                                 <ul
-                                    class="navbar-nav border rounded-pill bg-body justify-content-around align-items-center overflow-hidden"
+                                    class="navbar-nav border rounded-pill fondo_claro justify-content-around align-items-center overflow-hidden flex-wrap"
                                 >
                                     <li class="nav-item navbar-item-hover fondo_claro">
-                                        <a class="nav-link" href="#presentation">Inicio</a>
+                                        <a class="nav-link" href="#presentacion">Inicio</a>
                                     </li>
                                     <li class="nav-item navbar-item-hover fondo_claro">
                                         <a class="nav-link text-nowrap" href="#about_me">Sobre mí</a>
@@ -68,203 +70,300 @@
                 </div>
             </nav>
 
-            <div id="presentacion" class="d-flex flex-column">
-                <div class="d-flex justify-content-between p-5">
-                    <div class="d-flex justify-content-center w-50">
-                        <img class="w-50 imagen_aumenta" src="assets/img/foto_marco.png" alt="marco" />
-                    </div>
-                    <div class="d-flex flex-column my-auto letras_claras descripcion me-5">
-                        <h3 class="fs-1 mb-3 descripcion text-nowrap">¡Hola! Soy Javier Cortés</h3>
-                        <h4 class="fs-1">Desarrollador fullstack</h4>
-                        <div class="d-flex pt-5">
-                            <img class="me-4 imagen_aumenta lo_que_se" src="assets/img/java.png" alt="java" />
-                            <img class="me-4 imagen_aumenta lo_que_se" src="assets/img/html-5.png" alt="html-5" />
-                            <img class="me-4 imagen_aumenta lo_que_se" src="assets/img/js.png" alt="javaScript" />
-                            <img class="me-4 imagen_aumenta lo_que_se" src="assets/img/android.png" alt="javaScript" />
-                            <img
-                                class="me-4 imagen_aumenta lo_que_se"
-                                src="assets/img/servidor-sql.png"
-                                alt="javaScript"
-                            />
-                            <img class="me-4 imagen_aumenta lo_que_se" src="assets/img/GIT.png" alt="javaScript" />
+            <!-- Presentación -->
+            <section id="presentacion" class="pb-4">
+                <div class="container">
+                    <div class="row align-items-center g-4">
+                        <div class="col-12 col-lg-5 text-center">
+                            <img class="img-fluid imagen_aumenta w-75" src="assets/img/foto_marco.png" alt="marco" />
+                        </div>
+                        <div class="col-12 col-lg-7 letras_claras descripcion p-3 p-md-0">
+                            <h3 class="fs-1 mb-5 text-lg-nowrap">¡Hola! Soy Javier Cortés</h3>
+                            <h4 class="fs-1 text-lg-nowrap">Desarrollador fullstack</h4>
+                            <div class="d-flex flex-wrap gap-3 pt-4 me-5 justify-content-between">
+                                <img class="imagen_aumenta lo_que_se img-fluid" src="assets/img/java.png" alt="java" />
+                                <img
+                                    class="imagen_aumenta lo_que_se img-fluid"
+                                    src="assets/img/html-5.png"
+                                    alt="html-5"
+                                />
+                                <img
+                                    class="imagen_aumenta lo_que_se img-fluid"
+                                    src="assets/img/js.png"
+                                    alt="javaScript"
+                                />
+                                <img
+                                    class="imagen_aumenta lo_que_se img-fluid"
+                                    src="assets/img/android.png"
+                                    alt="android"
+                                />
+                                <img
+                                    class="imagen_aumenta lo_que_se img-fluid"
+                                    src="assets/img/servidor-sql.png"
+                                    alt="sql"
+                                />
+                                <img class="imagen_aumenta lo_que_se img-fluid" src="assets/img/GIT.png" alt="git" />
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div id="herramientas">
-                <hr />
-                <div class="d-flex justify-content-between my-auto mx-4 herramientas_lista">
-                    <p class="imagen_aumenta">JAVA</p>
-                    <p>/</p>
-                    <p class="imagen_aumenta">C#</p>
-                    <p>/</p>
-                    <p class="imagen_aumenta">HTML-5</p>
-                    <p>/</p>
-                    <p class="imagen_aumenta">CSS</p>
-                    <p>/</p>
-                    <p class="imagen_aumenta">JAVASCRPIT</p>
-                    <p>/</p>
-                    <p class="imagen_aumenta">KOTLIN</p>
-                    <p>/</p>
-                    <p class="imagen_aumenta">SQL</p>
-                    <p>/</p>
-                    <p class="imagen_aumenta">GIT</p>
-                    <p>/</p>
+            </section>
+
+            <!-- Herramientas -->
+            <section id="herramientas">
+                <div class="">
+                    <hr />
+                    <div
+                        class="d-flex flex-wrap justify-content-between align-items-center gap-3 mx-3 my-3 herramientas_lista"
+                    >
+                        <p class="m-0 imagen_aumenta">JAVA</p>
+                        <p class="m-0">/</p>
+                        <p class="m-0 imagen_aumenta">C#</p>
+                        <p class="m-0">/</p>
+                        <p class="m-0 imagen_aumenta">HTML-5</p>
+                        <p class="m-0">/</p>
+                        <p class="m-0 imagen_aumenta">CSS</p>
+                        <p class="m-0">/</p>
+                        <p class="m-0 imagen_aumenta">JAVASCRPIT</p>
+                        <p class="m-0">/</p>
+                        <p class="m-0 imagen_aumenta">KOTLIN</p>
+                        <p class="m-0">/</p>
+                        <p class="m-0 imagen_aumenta">SQL</p>
+                        <p class="m-0">/</p>
+                        <p class="m-0 imagen_aumenta">GIT</p>
+                        <p class="m-0">/</p>
+                    </div>
+                    <hr />
                 </div>
-                <hr />
-            </div>
+            </section>
         </div>
 
-        <!-- Pagina sobre mí -->
-        <div id="about_me" class="vh-100">
-            <h2 class="text-center mb-5 p-5 fs-1">Sobre mí.</h2>
-            <div class="d-flex justify-content-around align-items-center">
-                <div class="ms-5">
-                    <img src="assets/img/mi_foto.png" alt="mi_foto" class="m-auto" />
-                </div>
-                <div class="px-5 fs-3">
-                    <p>
-                        Soy un Desarrollador Junior especializado tanto en desarrollo web como en aplicaciones
-                        multiplataforma.
-                    </p>
-                    <p>
-                        Actualmente, mi objetivo es seguir desenvolviéndome en el desarrollo web para dar un salto en mi
-                        carrera laboral.
-                    </p>
-                    <p>
-                        Gracias a mi titulación como Tecnico Superior en Desarrollo de Aplicaciones Multiplataforma y mi
-                        titulación en el bootcamp de Desarrollador Web Fullstack de Neoland, tengo sólidos conocimientos
-                        en HTML, CSS, JavaScript, Bootstrap, Angular, entre otras.
-                    </p>
+        <!-- Página sobre mí -->
+        <section id="about_me" class="min-vh-100 py-5">
+            <div class="container h-100 d-flex flex-column justify-content-center">
+                <h2 class="text-center mb-5 fs-1">Sobre mí.</h2>
+                <div class="row align-items-center g-4 pt-5 flex-grow-1">
+                    <div class="col-12 col-md-5 text-center mb-4 mb-md-0">
+                        <img
+                            src="assets/img/mi_foto.png"
+                            alt="mi_foto"
+                            class="img-fluid m-auto"
+                            style="max-height: 400px"
+                        />
+                    </div>
+
+                    <div class="col-12 col-md-7 fs-4 p-3 p-md-0 text-center text-md-start">
+                        <p>
+                            Soy un Desarrollador Junior especializado tanto en desarrollo web como en aplicaciones
+                            multiplataforma.
+                        </p>
+                        <p>
+                            Actualmente, mi objetivo es seguir desenvolviéndome en el desarrollo web para dar un salto
+                            en mi carrera laboral.
+                        </p>
+                        <p>
+                            Gracias a mi titulación como Tecnico Superior en Desarrollo de Aplicaciones Multiplataforma
+                            y mi titulación en el bootcamp de Desarrollador Web Fullstack de Neoland, tengo sólidos
+                            conocimientos en HTML, CSS, JavaScript, Bootstrap, Angular, entre otras.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        
+
         <hr class="mb-5" />
 
         <!-- Página formación -->
-        <div id="formacion" class="">
-            <h2 class="text-center fs-1">Mi formación.</h2>
-            <div class="d-flex justify-content-between">
-                <div class="border rounded m-5 p-5">
-                    <h3 class="text-center fs-2">Formación académica</h3>
-                    <hr class="pb-2" />
-                    <div class="d-flex justify-content-between" name="caja_elemento">
-                        <h4 class="fs-3">Bootcamp desarrollo web fullstack</h4>
-                        <div class="d-flex align-items-center" name="fotoYNombre">
-                            <h5 class="text-end">Neoland, 2025</h5>
-                        </div>
-                    </div>
-                    <hr />
+        <section id="formacion" class="pb-5">
+            <div class="container">
+                <h2 class="text-center fs-1 mb-4">Mi formación.</h2>
+                <div class="row">
+                    <!-- Formación académica -->
+                    <div class="col-12 col-lg-6 my-5">
+                        <div class="border rounded p-4 mb-4 h-100">
+                            <h3 class="text-center fs-2">Formación académica</h3>
+                            <hr class="pb-2" />
 
-                    <div class="d-flex justify-content-between" name="caja_elemento">
-                        <h4 class="fs-3">Tecnico Superior en Desarrollo de Aplicaciones Multiplataforma</h4>
-                        <div class="d-flex align-items-center" name="fotoYNombre">
-                            <h5 class="text-end text-nowrap">IES Tierno Galvan, 2022-2024</h5>
-                        </div>
-                    </div>
-                    <hr />
+                            <div
+                                class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center"
+                                name="caja_elemento"
+                            >
+                                <h4 class="fs-3 mb-2 mb-md-0">Bootcamp desarrollo web fullstack</h4>
+                                <div class="d-flex align-items-center" name="fotoYNombre">
+                                    <h5 class="text-md-end mb-0">Neoland, 2025</h5>
+                                </div>
+                            </div>
+                            <hr />
 
-                    <div class="d-flex justify-content-between" name="caja_elemento">
-                        <h4 class="fs-3">Bachillerato de ciencias</h4>
-                        <div class="d-flex align-items-center" name="fotoYNombre">
-                            <h5 class="text-end">IES Ciudad de los Angeles, 2020-2022</h5>
-                        </div>
-                    </div>
-                    <hr />
-                    <div class="d-flex justify-content-between" name="caja_elemento">
-                        <h4 class="fs-3">Inglés</h4>
-                        <div class="d-flex align-items-center" name="fotoYNombre">
-                            <h5 class="text-end">Nivel B1</h5>
-                        </div>
-                    </div>
-                    <hr />
-                </div>
+                            <div
+                                class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center"
+                                name="caja_elemento"
+                            >
+                                <h4 class="fs-3 mb-2 mb-md-0">
+                                    Tecnico Superior en Desarrollo de Aplicaciones Multiplataforma
+                                </h4>
+                                <div class="d-flex align-items-center" name="fotoYNombre">
+                                    <h5 class="text-md-end text-nowrap mb-0">IES Tierno Galvan, 2022-2024</h5>
+                                </div>
+                            </div>
+                            <hr />
 
-                <div class="border rounded m-5 p-5 pb-0">
-                    <h3 class="fs-2 text-center">Habilidades</h3>
-                    <hr class="pb-2" />
-                    <div class="d-flex justify-content-between" name="caja_elemento">
-                        <div class="d-flex align-items-center" name="fotoYNombre">
-                            <img src="assets/img/javaColor.png" alt="java" class="lo_que_se imagen_aumenta" />
-                            <h4 class="mx-5 fs-3">Java</h4>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center" name="experiencia">
-                            <h5>Avanzado</h5>
-                        </div>
-                    </div>
-                    <hr />
+                            <div
+                                class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center"
+                                name="caja_elemento"
+                            >
+                                <h4 class="fs-3 mb-2 mb-md-0">Bachillerato de ciencias</h4>
+                                <div class="d-flex align-items-center" name="fotoYNombre">
+                                    <h5 class="text-md-end mb-0">IES Ciudad de los Angeles, 2020-2022</h5>
+                                </div>
+                            </div>
+                            <hr />
 
-                    <div class="d-flex justify-content-between" name="caja_elemento">
-                        <div class="d-flex align-items-center auto" name="fotoYNombre">
-                            <img src="assets/img/htmlColor.png" alt="java" class="lo_que_se imagen_aumenta" />
-                            <h4 class="mx-5 fs-3 text-nowrap">HTML y CSS</h4>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center text-nowrap" name="experiencia">
-                            <h5>Avanzado</h5>
+                            <div
+                                class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center"
+                                name="caja_elemento"
+                            >
+                                <h4 class="fs-3 mb-2 mb-md-0">Inglés</h4>
+                                <div class="d-flex align-items-center" name="fotoYNombre">
+                                    <h5 class="text-md-end mb-0">Nivel B1</h5>
+                                </div>
+                            </div>
+                            <hr />
                         </div>
                     </div>
-                    <hr />
 
-                    <div class="d-flex justify-content-between" name="caja_elemento">
-                        <div class="d-flex align-items-center auto" name="fotoYNombre">
-                            <img src="assets/img/sqlColor.png" alt="java" class="lo_que_se imagen_aumenta" />
-                            <h4 class="mx-5 fs-3">SQL</h4>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center" name="experiencia">
-                            <h5>Medio</h5>
-                        </div>
-                    </div>
-                    <hr />
+                    <!-- Habilidades -->
+                    <div class="col-12 col-lg-6 my-5">
 
-                    <div class="d-flex justify-content-between" name="caja_elemento">
-                        <div class="d-flex align-items-center auto" name="fotoYNombre">
-                            <img src="assets/img/androidColor.png" alt="java" class="lo_que_se imagen_aumenta" />
-                            <h4 class="mx-5 fs-3">Kotlin</h4>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center" name="experiencia">
-                            <h5>Avanzado</h5>
-                        </div>
-                    </div>
-                    <hr />
+                        <div class="border rounded p-4 mb-4 h-100">
+                            <h3 class="fs-2 text-center">Habilidades</h3>
+                            <hr class="pb-2" />
 
-                    <div class="d-flex justify-content-between" name="caja_elemento">
-                        <div class="d-flex align-items-center" name="fotoYNombre">
-                            <img src="assets/img/jsColor.png" alt="java" class="lo_que_se imagen_aumenta" />
-                            <h4 class="mx-5 fs-3">JavaScript</h4>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center" name="experiencia">
-                            <h5>Avanzado</h5>
-                        </div>
-                    </div>
-                    <hr />
+                            <div
+                                class="d-flex justify-content-between flex-column flex-md-row align-items-start align-items-md-center"
+                                name="caja_elemento"
+                            >
+                                <div class="d-flex align-items-center" name="fotoYNombre">
+                                    <img
+                                        src="assets/img/javaColor.png"
+                                        alt="java"
+                                        class="lo_que_se imagen_aumenta img-fluid"
+                                    />
+                                    <h4 class="mx-4 fs-3 mb-0">Java</h4>
+                                </div>
+                                <div class="d-flex align-items-center" name="experiencia">
+                                    <h5 class="mb-0">Avanzado</h5>
+                                </div>
+                            </div>
+                            <hr />
 
-                    <div class="d-flex justify-content-between" name="caja_elemento">
-                        <div class="d-flex align-items-center" name="fotoYNombre">
-                            <img src="assets/img/c.png" alt="java" class="lo_que_se imagen_aumenta" />
-                            <h4 class="mx-5 fs-3">C# (.NET)</h4>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center" name="experiencia">
-                            <h5>Avanzado</h5>
+                            <div
+                                class="d-flex justify-content-between flex-column flex-md-row align-items-start align-items-md-center"
+                                name="caja_elemento"
+                            >
+                                <div class="d-flex align-items-center" name="fotoYNombre">
+                                    <img
+                                        src="assets/img/htmlColor.png"
+                                        alt="html-css"
+                                        class="lo_que_se imagen_aumenta img-fluid"
+                                    />
+                                    <h4 class="mx-4 fs-3 text-nowrap mb-0">HTML y CSS</h4>
+                                </div>
+                                <div class="d-flex align-items-center text-nowrap" name="experiencia">
+                                    <h5 class="mb-0">Avanzado</h5>
+                                </div>
+                            </div>
+                            <hr />
+
+                            <div
+                                class="d-flex justify-content-between flex-column flex-md-row align-items-start align-items-md-center"
+                                name="caja_elemento"
+                            >
+                                <div class="d-flex align-items-center" name="fotoYNombre">
+                                    <img
+                                        src="assets/img/sqlColor.png"
+                                        alt="sql"
+                                        class="lo_que_se imagen_aumenta img-fluid"
+                                    />
+                                    <h4 class="mx-4 fs-3 mb-0">SQL</h4>
+                                </div>
+                                <div class="d-flex align-items-center" name="experiencia">
+                                    <h5 class="mb-0">Medio</h5>
+                                </div>
+                            </div>
+                            <hr />
+
+                            <div
+                                class="d-flex justify-content-between flex-column flex-md-row align-items-start align-items-md-center"
+                                name="caja_elemento"
+                            >
+                                <div class="d-flex align-items-center" name="fotoYNombre">
+                                    <img
+                                        src="assets/img/androidColor.png"
+                                        alt="kotlin"
+                                        class="lo_que_se imagen_aumenta img-fluid"
+                                    />
+                                    <h4 class="mx-4 fs-3 mb-0">Kotlin</h4>
+                                </div>
+                                <div class="d-flex align-items-center" name="experiencia">
+                                    <h5 class="mb-0">Avanzado</h5>
+                                </div>
+                            </div>
+                            <hr />
+
+                            <div
+                                class="d-flex justify-content-between flex-column flex-md-row align-items-start align-items-md-center"
+                                name="caja_elemento"
+                            >
+                                <div class="d-flex align-items-center" name="fotoYNombre">
+                                    <img
+                                        src="assets/img/jsColor.png"
+                                        alt="javascript"
+                                        class="lo_que_se imagen_aumenta img-fluid"
+                                    />
+                                    <h4 class="mx-4 fs-3 mb-0">JavaScript</h4>
+                                </div>
+                                <div class="d-flex align-items-center" name="experiencia">
+                                    <h5 class="mb-0">Avanzado</h5>
+                                </div>
+                            </div>
+                            <hr />
+
+                            <div
+                                class="d-flex justify-content-between flex-column flex-md-row align-items-start align-items-md-center"
+                                name="caja_elemento"
+                            >
+                                <div class="d-flex align-items-center" name="fotoYNombre">
+                                    <img
+                                        src="assets/img/c.png"
+                                        alt="csharp"
+                                        class="lo_que_se imagen_aumenta img-fluid"
+                                    />
+                                    <h4 class="mx-4 fs-3 mb-0">C# (.NET)</h4>
+                                </div>
+                                <div class="d-flex align-items-center" name="experiencia">
+                                    <h5 class="mb-0">Avanzado</h5>
+                                </div>
+                            </div>
+                            <hr />
                         </div>
                     </div>
-                    <hr />
                 </div>
             </div>
-            
-        </div>
-        <hr>
+        </section>
 
-        <!-- pagina experiencia -->
-        <div id="experiencia" class="vh-100">
-            <h2 class="text-center fs-1 mt-5">Mi experiencia.</h2>
-            <div class="border rounded m-5 p-5">
-                
+        <hr />
 
+        <!-- Página experiencia -->
+        <section id="experiencia" class="py-5">
+            <div class="container">
+                <h2 class="text-center fs-1 mt-3 mb-4">Mi experiencia.</h2>
+                <div class="border rounded p-4">
+                    <!-- contenido -->
+                </div>
             </div>
-
-
-        </div>
-
-
+        </section>
     </body>
 </html>
