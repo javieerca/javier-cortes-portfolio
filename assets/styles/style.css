@@ -55,6 +55,13 @@
     transform: scale(1.2);
 }
 .dev_Jav{
-    text-decoration: none;
-    color: #eeeeee;
+    text-decoration: none !important;
+    color: #eeeeee !important;
+}
+
+.card_aumenta {
+    transition: transform 0.3s ease;
+}
+.card_aumenta:hover{
+    transform: scale(1.01);
 }
