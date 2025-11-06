@@ -2,19 +2,27 @@
     background-color: #0e1419 !important;
 }
 
-.color-fondo_secundario {
-    background-color: #ffd500;
+.color_fondo_secundario {
+    background: linear-gradient(#0e1419,#1d1d24);
 }
 
 .color-terciario {
-    background-color: #468faf;
+    background-color: #42d3c4;
 }
+
+.fondo2{
+    background-color: #21212c;
+}
+
 
 .fondo_claro {
     background-color: #333;
     & a {
-        color: #eeeeee;
+        color: #eee;
     }
+
+        color: #eee;
+    
 }
 
 .letras_amarillas {
@@ -22,7 +30,7 @@
 }
 
 .letras_claras {
-    color: #eeeeee;
+    color: #eee;
 }
 
 .navbar-item-hover a {
@@ -31,7 +39,7 @@
 }
 
 .navbar-item-hover a:hover {
-    background-color: gray;
+    background-color: #42d3c4;
     /* color: #ffd500; */
     overflow: hidden;
 }
